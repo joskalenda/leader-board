@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Leader Board</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header--title">
+      <h1>Sniper Game Contest <span>2022</span></h1>
+    </div>
+    <nav class="nav">
+      <ul class="nav--item">
+        <li class="nav--li"> <a href="#">New Player</a></li>
+        <li class="nav--li"> <a href="#">Book live ticket</a></li>
+        <li class="nav--li"> <a href="#">Suscribe</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+      <article class="article">
+        <section class="king--section">
+          <div class="title--king">
+            <h2>Leaderboard</h2>
+            <i class="fa fa-refresh fa-spin"></i>
+          </div>
+          <div class="seasons">
+            <p>Live Score</p>
+            <p>Last Month</p>
+            <p>Last Year</p>
+          </div>
+          <div class="winners">
+            <div id="2--winner" class="d-flex">
+              <p id="sec-w" >2nd Winner</p>
+              <p id="2w--name"></p>
+              <p id="2w--score" ></p>
+            </div>
+            <div id="king" class="d-flex">
+              <p id="fs-w" >KING</p>
+              <p id="k--name"></p>
+              <p id="k--score" ></p>
+            </div>
+            <div id="3--winner" class="d-flex">
+              <p id="th-w" >3rd Winner</p>
+              <p id="3w--name"></p>
+              <p id="3w--score" ></p>
+            </div>
+          </div>
+        </section>
+        <section class="player--section">
+        </section>
+      </article>
+
+      
+      <aside class="aside">
+        <h3>Welcome to the new Contest, Ready to play ? There we GOOOO!</h3>
+        <button id = "play--now" type="button">Play now</button>
+        <form action="#" method="post">
+          <input type="text" name="name" placeholder="Enter your username" maxlength="10">
+          <input type="text" name="number" placeholder="Enter your score" maxlength="5">
+          <button type="submit" value="submit"> Submit</button>
+          <p id="error"></p>
+        </form>
+      </aside>
+  </main>
+  <footer class="footer">
+    <p> Created by Topaz Jos Kalenda ...@Microverse</p>
+  </footer>
+  <script src="../src/index.js"></script>
+  
+</body>
+</html>
