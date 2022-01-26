@@ -191,6 +191,13 @@ form {
   gap: 20px;
 }
 
+/* stylelint-disable-next-line no-descending-specificity */
+form p {
+  color: rgb(218, 181, 181);
+  font-size: 20px;
+  font-weight: bold;
+}
+
 form input {
   width: 80%;
   padding: 8px;
