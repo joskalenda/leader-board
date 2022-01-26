@@ -2,9 +2,13 @@
   "name": "leader-board",
   "version": "1.0.0",
   "description": "The leader board is a small website system built to dispaly players score according to the high rate",
+  "private": "true",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open ",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
