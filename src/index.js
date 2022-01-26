@@ -1,5 +1,4 @@
-import '../src/style.css';
-// import video from '../asset/video.mp4$'
+import './style.css';
 
 const PlayerSection = document.querySelector('.player--section');
 
@@ -36,9 +35,7 @@ const DisplayPlayer = () => {
     <h3 id="player--name">${e.name}</h3>
     <p id="player--score">${e.score}</p>`;
     PlayerSection.appendChild(player);
-
   });
-
 };
 
 DisplayPlayer();
