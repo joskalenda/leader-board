@@ -1,9 +1,10 @@
+import { addUserScore} from './set__api';
 
 const showForm = document.querySelector('#form-id');
 const number = document.querySelector('#number');
 const userName = document.querySelector('#user--name');
 
-export const CheckIfNumber =  () => {
+export const CheckIfNumber = async () => {
   if (isNaN(number.value)) {
     document.getElementById("error").innerText = "Please enter Numeric score value";
     setTimeout(function(){
@@ -23,6 +24,8 @@ export const CheckIfNumber =  () => {
     }, 3000);
     return false;
   }else {
+    // add newplayer if input valid 
+    await addUserScore();
     return true;
   };
 };
