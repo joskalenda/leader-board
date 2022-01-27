@@ -33,4 +33,16 @@ const display = async () => {
 
 }
 
+// add newplayer
+submitScore.addEventListener ('click', async (e) => {
+  e.preventDefault();
+  CheckIfNumber();
+  number.value = '';
+  userName.value = '';
+  display(); 
+});
+playNow.addEventListener ('click', () => {
+  ShownNewUser();
+});
+reloadPage.addEventListener ('click', display);
 
