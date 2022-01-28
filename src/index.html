@@ -63,9 +63,29 @@
           <input id="number" type="text" name="number" placeholder="Enter your score" maxlength="5">
           <button id = "submit--score" type="button"> Submit</button>
           <p id="error"></p>
+          <button data-modal-target="#modal" id="star" type="button">Leave a Star</button>
         </form>
+        <div class="modal" id="modal">
+          <h3 id="close" data-close-button class="close-button"> Xlose</h3>
+          <div class="pop--img">
+          </div>
+          <h4 id="hello">Hi, I'm Jos Kalenda</h4>
+          <p id="para">
+            I'm happy you have clicked on the button, 
+            now follow these links either to connect or 
+            to leave a star to my project if you appreciate
+            hard work.
+          </p>
+          <div id="links">
+            <a href= "https://www.linkedin.com/in/jos-kalenda-908069205/">LinkedIn</a>
+            <a href= "https://twitter.com/JosKalenda">Twiter </a>
+            <a href="https://github.com/joskalenda/leader-board" >Github</a>
+          </div>
+          <p id="thanks">Thank you</p>
+        </div>
       </aside>
-  </main>
+      <div id="overlay"></div>
+    </main>
   <footer class="footer">
     <p> Created by Topaz Jos Kalenda ...@Microverse</p>
   </footer>
