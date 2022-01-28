@@ -1,6 +1,6 @@
 const number = document.querySelector('#number');
 const userName = document.querySelector('#user--name');
-const GAME_ID = '/jzic9pCLMoU6m7xfRER2/';
+const GAME_ID = '/xgniqgk7rfe1GeXIXA3f/';
 const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
 export const addNewScore = async () => {
@@ -13,11 +13,10 @@ export const addNewScore = async () => {
       },
       body: JSON.stringify(DataStore),
       // eslint-disable-next-line comma-dangle
-    }
-  );
+    });
   const data = await response.json();
   return data;
-}
+};
 
 export const FetchNewScore = async () => {
   const response = await fetch(
@@ -26,5 +25,4 @@ export const FetchNewScore = async () => {
   );
   const data = await response.json();
   return data;
-}
-
+};
