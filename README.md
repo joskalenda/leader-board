@@ -54,7 +54,7 @@ cd into the folder
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/joskalenda/leader-board/issues/new.
+Feel free to check the [issues page](https://github.com/joskalenda/leader-board/issues/new)
 
 ## Show your support
 
