@@ -5,7 +5,6 @@ const number = document.querySelector('#number');
 const userName = document.querySelector('#user--name');
 
 export const CheckIfNumber = async () => {
-
   if ((!Number.isInteger(Number(number.value)))) {
     document.getElementById('error').innerText = 'Please enter Numeric score value';
     setTimeout(() => {
