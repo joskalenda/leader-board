@@ -24,7 +24,7 @@
       <article class="article">
         <section class="king--section">
           <div class="title--king">
-            <h2>Leaderboard</h2>
+            <h2>Leaderboard</h2> 
             <i class="fa fa-refresh fa-spin"></i>
           </div>
           <div class="seasons">
@@ -34,38 +34,58 @@
           </div>
           <div class="winners">
             <div id="2--winner" class="d-flex">
-              <p id="sec-w" >2nd Winner</p>
-              <p id="2w--name"></p>
-              <p id="2w--score" ></p>
+              <p id="sec-w" >2nd</p>
+              <p id="sec--score" ></p>
             </div>
             <div id="king" class="d-flex">
-              <p id="fs-w" >KING</p>
-              <p id="k--name"></p>
+              <p id="fs-w" >
+                <!-- add image from js -->
+              </p>
               <p id="k--score" ></p>
             </div>
             <div id="3--winner" class="d-flex">
-              <p id="th-w" >3rd Winner</p>
-              <p id="3w--name"></p>
-              <p id="3w--score" ></p>
+              <p id="th-w" >3rd</p>
+              <p id="th--score" ></p>
             </div>
           </div>
         </section>
         <section class="player--section">
+          <!-- Creat player dynamically -->
         </section>
       </article>
       
       <aside class="aside">
         <h3>Welcome to the new Contest, Ready to play ? There we GOOOO!</h3>
         <button id = "play--now" type="button">Play now</button>
-        <form action="#" method="post">
+        <form action="#" id="form-id">
           <p>Add your score</p>
-          <input type="text" name="name" placeholder="Enter your username" maxlength="10">
-          <input type="text" name="number" placeholder="Enter your score" maxlength="5">
-          <button type="submit" value="submit"> Submit</button>
+          <input id="user--name" type="text" name="name" placeholder="Enter your username" maxlength="10">
+          <input id="number" type="text" name="number" placeholder="Enter your score" maxlength="5">
+          <button id = "submit--score" type="button"> Submit</button>
           <p id="error"></p>
+          <button data-modal-target="#modal" id="star" type="button">Leave a Star</button>
         </form>
+        <div class="modal" id="modal">
+          <h3 id="close" data-close-button class="close-button"> Xlose</h3>
+          <div class="pop--img">
+          </div>
+          <h4 id="hello">Hi, I'm Jos Kalenda</h4>
+          <p id="para">
+            I'm happy you have clicked on the button, 
+            now follow these links either to connect or 
+            to leave a star to my project if you appreciate
+            hard work.
+          </p>
+          <div id="links">
+            <a href= "https://www.linkedin.com/in/jos-kalenda-908069205/">LinkedIn</a>
+            <a href= "https://twitter.com/JosKalenda">Twiter </a>
+            <a href="https://github.com/joskalenda/leader-board" >Github</a>
+          </div>
+          <p id="thanks">Thank you</p>
+        </div>
       </aside>
-  </main>
+      <div id="overlay"></div>
+    </main>
   <footer class="footer">
     <p> Created by Topaz Jos Kalenda ...@Microverse</p>
   </footer>
