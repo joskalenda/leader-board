@@ -1,4 +1,5 @@
-import { addUserScore} from './set__api';
+
+import { addNewScore} from './set__api';
 
 const showForm = document.querySelector('#form-id');
 const number = document.querySelector('#number');
@@ -25,7 +26,7 @@ export const CheckIfNumber = async () => {
     return false;
   }else {
     // add newplayer if input valid 
-    await addUserScore();
+    await addNewScore();
     return true;
   };
 };

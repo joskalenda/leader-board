@@ -8,9 +8,6 @@
   <title>Leader Board</title>
 <script defer src="main.js"></script></head>
 <body>
-  <!-- <video autoplay muted loop id="myVideo">
-    <source src="../asset/video.mp4" type="video/mp4">
-  </video> -->
   <header class="header">
     <div class="header--title">
       <h1>Sniper Game Contest <span>2022</span></h1>
@@ -27,7 +24,7 @@
       <article class="article">
         <section class="king--section">
           <div class="title--king">
-            <h2>Leaderboard</h2>
+            <h2>Leaderboard</h2> 
             <i class="fa fa-refresh fa-spin"></i>
           </div>
           <div class="seasons">
@@ -38,47 +35,40 @@
           <div class="winners">
             <div id="2--winner" class="d-flex">
               <p id="sec-w" >2nd Winner</p>
-              <!-- <div id="div-img">
-                <img src="../asset/win2.jpeg" alt="2nd winner">
-              </div> -->
               <p id="2w--name"></p>
               <p id="2w--score" ></p>
             </div>
             <div id="king" class="d-flex">
-              <i class='fas fa-crown'></i>
+              <p id="fs-w" >KING</p>
               <p id="k--name"></p>
               <p id="k--score" ></p>
             </div>
             <div id="3--winner" class="d-flex">
               <p id="th-w" >3rd Winner</p>
-              <!-- <img src="../asset/win3.jpeg" alt="3nd winner"> -->
               <p id="3w--name"></p>
               <p id="3w--score" ></p>
             </div>
           </div>
         </section>
         <section class="player--section">
-          <!-- <div class="player--div">
-            <p id="player--index"></p>
-            <h3 id="player--name"></h3>
-            <p class="player--scrore"></p>
-          </div> -->
+          <!-- Creat player dynamically -->
         </section>
       </article>
-
       
-      <aside class="main--addnew--container">
-        <div><h3>Welcome to the new Contest, Ready to play ? There we GOOOO!</h3></div>
-        <form action="#" method="post">
-          <input type="text" name="name" placeholder="Enter your username" maxlength="10">
-          <input type="text" name="number" placeholder="Enter your score" maxlength="5">
-          <button type="submit" value="submit"> Submit</button>
+      <aside class="aside">
+        <h3>Welcome to the new Contest, Ready to play ? There we GOOOO!</h3>
+        <button id = "play--now" type="button">Play now</button>
+        <form action="#" id="form-id">
+          <p>Add your score</p>
+          <input id="user--name" type="text" name="name" placeholder="Enter your username" maxlength="10">
+          <input id="number" type="text" name="number" placeholder="Enter your score" maxlength="5">
+          <button id = "submit--score" type="button"> Submit</button>
           <p id="error"></p>
         </form>
       </aside>
   </main>
   <footer class="footer">
-    <p> Created by Topaz Jos Kalenda ...</p>
+    <p> Created by Topaz Jos Kalenda ...@Microverse</p>
   </footer>
   <script src="../src/index.js"></script>
   
