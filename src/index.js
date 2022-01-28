@@ -50,7 +50,7 @@ const LoadData = async () => {
   KingScore.innerHTML = `${User.result[0].user}: ${User.result[0].score} `;
   SecScore.innerHTML = `${User.result[1].user}: ${User.result[1].score} `;
   ThScore.innerHTML = `${User.result[2].user}: ${User.result[2].score} `;
-  
+
   DisplayPlayer(User.result);
 };
 
@@ -68,37 +68,36 @@ playNow.addEventListener('click', () => {
 
 reloadPage.addEventListener('click', LoadData);
 
-openModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = document.querySelector(button.dataset.modalTarget)
-    openModal(modal)
-  })
-})
-
-overlay.addEventListener('click', () => {
-  const modals = document.querySelectorAll('.modal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
-  })
-})
-
-closeModalButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const modal = button.closest('.modal')
-    closeModal(modal)
-  })
-})
-
 const openModal = (modal) => {
-  if (modal == null) return
-  modal.classList.add('active')
-  overlay.classList.add('active')
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
   Owner.innerHTML = `<img src="${jos}">`;
-  
-}
+};
 
-const closeModal = (modal)  => {
-  if (modal == null) return
+const closeModal = (modal) => {
+  if (modal == null) return;
   modal.classList.remove('active');
   overlay.classList.remove('active');
-}
+};
+
+closeModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});
+
+openModalButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
+
+overlay.addEventListener('click', () => {
+  const modals = document.querySelectorAll('.modal.active');
+  modals.forEach((modal) => {
+    closeModal(modal);
+  });
+});

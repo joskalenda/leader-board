@@ -6,7 +6,7 @@ const userName = document.querySelector('#user--name');
 
 export const CheckIfNumber = async () => {
 
-  if ((isNaN(number.value))) {
+  if ((!Number.isInteger(Number(number.value)))) {
     document.getElementById('error').innerText = 'Please enter Numeric score value';
     setTimeout(() => {
       document.getElementById('error').innerText = '';
@@ -25,9 +25,10 @@ export const CheckIfNumber = async () => {
     }, 3000);
     return false;
   }
-  // add newplayer if input valid
   await addNewScore();
   return true;
+
+  // add newplayer if input valid
 };
 
 export const ShownNewUser = () => {
