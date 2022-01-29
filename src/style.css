@@ -20,11 +20,14 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: -18px;
+  left: 0;
+  right: 0;
   display: flex;
   text-align: center;
   justify-content: space-evenly;
   margin: 0;
-  padding: 10px;
   align-items: center;
 }
 
@@ -37,7 +40,7 @@ a {
 
 .header--title {
   color: orange;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .nav--item {
@@ -48,14 +51,14 @@ a {
 
 .nav--li {
   padding: 24px;
-  font-size: 20px;
+  font-size: 16px;
   color: orange;
 }
 
 .main {
   display: table;
   width: 900px;
-  margin: 40px auto;
+  margin: 60px auto;
 }
 
 .article {
@@ -158,7 +161,7 @@ a {
 
 .player--section {
   overflow-x: auto;
-  max-height: 400px;
+  max-height: 270px;
 }
 
 .player--div {
@@ -426,8 +429,8 @@ footer {
   left: 0;
   position: fixed;
   color: #fff;
-  padding: 10px;
-  font-size: 20px;
+  padding: 5px;
+  font-size: 14px;
   font-weight: bold;
   justify-content: center;
   text-align: center;
