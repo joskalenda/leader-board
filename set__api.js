@@ -1,6 +1,6 @@
 const number = document.querySelector('#number');
 const userName = document.querySelector('#user--name');
-const GAME_ID = '/1KkwOLyCjcLDgikgiZyL/';
+const GAME_ID = '/8G0FD1zIAHQTvekJTKtG/';
 const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/';
 
 export const addNewScore = async () => {
