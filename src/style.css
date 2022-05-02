@@ -1,3 +1,4 @@
+/* stylelint-disable no-descending-specificity */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,30 +6,24 @@
 }
 
 body {
-  overflow: hidden;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   padding: 0;
-  margin: 0 20px;
+  margin: 0;
+  background-color: black;
   background-image: linear-gradient(rgba(70, 5, 155, 0.7), rgba(99, 44, 170, 0.7)), url('../asset/snip2.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 200%;
   background-position: center top;
 }
 
 .header {
-  position: fixed;
-  top: -18px;
-  left: 0;
-  right: 0;
+  padding: 8px;
   display: flex;
-  text-align: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 0;
-  align-items: center;
 }
 
 li,
@@ -40,44 +35,37 @@ a {
 
 .header--title {
   color: orange;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .nav--item {
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-}
-
-.nav--li {
-  padding: 24px;
-  font-size: 16px;
-  color: orange;
+  display: none;
 }
 
 .main {
-  display: table;
-  width: 900px;
-  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
 }
 
 .article {
-  display: table-cell;
-  width: 500px;
-  border: 2px solid blanchedalmond;
-  margin: 20px;
+  display: flex;
+  width: 470px;
+  border-bottom: 1px solid rgb(168, 168, 167);
 }
 
 .king--section {
   background-color: rgba(24, 7, 39, 0.719);
   border-radius: 0 0 20px 20px;
   margin: 0;
-  padding: 0 24px;
+  width: 200px;
+  padding: 0 8px;
   height: 300px;
 }
 
 .title--king {
   display: flex;
+  color: red;
   justify-content: space-between;
   text-align: center;
   align-items: center;
@@ -87,8 +75,8 @@ a {
 .title--king i {
   cursor: pointer;
   color: orange;
-  font-size: 20px;
-  padding: 20px 0;
+  font-size: 14px;
+  padding: 10px 0;
 }
 
 .seasons {
@@ -98,55 +86,73 @@ a {
   color: rgb(167, 130, 105);
   border-radius: 70px;
   cursor: pointer;
-  padding: 14px;
-  margin: 20px 0;
-  margin-bottom: 0;
-  font-weight: bold;
-  justify-content: space-between;
+  padding: 3px;
+  margin: 16px 0 0 0;
+  justify-content: center;
 }
 
-.seasons p:first-child {
+.seasons p {
+  display: none;
+}
+
+.seasons h2 {
+  padding: 0;
+  font-size: 17px;
   color: rgb(199, 52, 52);
 }
 
 .winners {
   display: flex;
+  gap: 10px;
+  border: 1px solid rgb(50, 50, 50);
+  flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
+  margin-top: 14px;
   align-items: center;
 }
 
 .d-flex {
   display: flex;
-  flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
+#scorediv,
+#scorediv2,
+#scorediv3 {
+  gap: 10px;
+  margin-left: -40px;
+}
+
 #sec-w,
 #th-w {
   color: orange;
-  font-size: 28px;
+  font-size: 16px;
   font-weight: bolder;
   font-family: cursive;
   padding: 14px;
   border: 2px solid rgb(99, 89, 80);
   border-radius: 50px;
-  transform: translateY(2.8rem);
+  transform: translateX(1.5rem);
 }
 
 #sec--score,
 #th--score {
+  width: 90px;
+  height: 20px;
   color: rgb(192, 209, 192);
   font-weight: bolder;
-  font-size: 16px;
-  transform: translateY(3rem);
+  font-size: 13px;
+  transform: translateX(1.4rem);
 }
 
 #fs-w {
-  padding-top: 5px;
-  width: 60px;
+  width: 50px;
+  border-radius: 8px;
+  padding: 0;
+  transform: translateX(1.5rem);
 }
 
 #fs-w img {
@@ -154,14 +160,17 @@ a {
 }
 
 #k--score {
-  color: rgb(192, 209, 192);
+  color: rgb(221, 155, 68);
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 13px;
+  transform: translateX(1.2rem);
 }
 
 .player--section {
+  border: 1px solid rgb(124, 124, 124);
+  width: 267px;
   overflow-x: auto;
-  max-height: 270px;
+  max-height: 300px;
 }
 
 .player--div {
@@ -169,8 +178,7 @@ a {
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  padding: 20px;
-  gap: 100px;
+  padding: 2px;
   box-shadow:
     0 35px 60px 0 rgba(0, 0, 0, 0.25),
     inset -4px 0 12px 0 rgba(8, 8, 8, 0.25),
@@ -187,7 +195,7 @@ a {
 
 #player--score {
   color: orange;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -199,7 +207,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 60px;
+  width: 40px;
 }
 
 #player--index img {
@@ -215,13 +223,16 @@ a {
 }
 
 .aside {
-  width: 350px;
+  width: 470px;
   display: table-cell;
 }
 
 .aside h3 {
   color: orange;
-  padding: 24px;
+  margin: 0 auto;
+  width: 60%;
+  padding: 0;
+  font-size: 15px;
   line-height: 28px;
 }
 
@@ -230,7 +241,8 @@ a {
   color: rgb(197, 175, 133);
   background-color: rgb(85, 2, 117);
   padding: 5px;
-  font-size: 20px;
+  margin: 7px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   border-radius: 10px;
@@ -253,32 +265,31 @@ form {
   gap: 20px;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 form p {
   color: rgb(218, 181, 181);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
 form input {
-  width: 80%;
-  padding: 8px;
-  transform: translateX(2rem);
+  width: 60%;
+  padding: 4px;
+  border-radius: 8px;
+  margin: 0 auto;
 }
 
 form input:placeholder-shown {
   color: black;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 14px;
 }
 
 form button {
   width: 40%;
+  margin: 0 auto;
   color: orange;
-  font-size: 20px;
+  font-size: 15px;
   background-color: rgb(85, 2, 117);
   padding: 5px;
-  transform: translateX(9.4rem);
   cursor: pointer;
   box-shadow:
     -2px -2px 10px 0 rgba(192, 191, 191, 0.6),
@@ -292,14 +303,13 @@ form button:hover {
 }
 
 #error {
-  color: #fff;
-  font-size: 16px;
+  color: rgb(240, 55, 55);
+  font-size: 14px;
 }
 
 #star {
-  font-size: 16px;
-  font-weight: bold;
-  padding: 8px;
+  font-size: 14px;
+  padding: 5px;
 }
 
 .modal {
@@ -311,7 +321,7 @@ form button:hover {
   color: #0001;
   justify-content: center;
   border-radius: 20px;
-  width: 500px;
+  width: 400px;
   height: 300px;
   margin: 0;
   padding: 10px;
@@ -353,7 +363,7 @@ form button:hover {
   padding: 0;
   position: absolute;
   top: 5px;
-  right: 10px;
+  right: -80px;
   cursor: pointer;
   color: rgb(117, 116, 116);
 }
@@ -370,7 +380,6 @@ form button:hover {
   border-radius: 50%;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .pop--img img {
   align-items: center;
   justify-content: center;
@@ -427,11 +436,232 @@ footer {
   bottom: 0;
   right: 0;
   left: 0;
-  position: fixed;
-  color: #fff;
+  color: rgb(167, 164, 164);
   padding: 5px;
   font-size: 14px;
   font-weight: bold;
   justify-content: center;
   text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-size: 100%;
+    margin: 0 20px;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .seasons h2 {
+    display: none;
+  }
+
+  .header {
+    position: fixed;
+    top: -18px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin: 0;
+    align-items: center;
+  }
+
+  .header--title {
+    font-size: 14px;
+  }
+
+  .nav--item {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .nav--li {
+    padding: 24px;
+    font-size: 16px;
+    color: orange;
+  }
+
+  .main {
+    display: table;
+    width: 900px;
+    margin: 60px auto;
+  }
+
+  .article {
+    display: table-cell;
+    width: 500px;
+    border-bottom: 0;
+    border: 2px solid rgb(157, 156, 154);
+    padding: 0;
+    margin: 20px;
+  }
+
+  .king--section {
+    margin: 0;
+    padding: 5px 24px;
+    border: none;
+    width: 500px;
+    height: 320px;
+  }
+
+  .title--king h2,
+  .title--king i {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+
+  .seasons {
+    padding: 14px;
+    margin: 20px 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    justify-content: space-between;
+  }
+
+  .seasons p {
+    display: flex;
+  }
+
+  .seasons p:first-child {
+    color: rgb(199, 52, 52);
+  }
+
+  .winners {
+    gap: 0;
+    border: none;
+    flex-direction: row;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+
+  #scorediv,
+  #scorediv2,
+  #scorediv3 {
+    gap: 0;
+    margin: 0;
+  }
+
+  #sec-w,
+  #th-w {
+    font-size: 28px;
+    transform: translateX(0);
+    transform: translateY(2.8rem);
+  }
+
+  #sec--score,
+  #th--score {
+    width: 100px;
+    font-size: 16px;
+    transform: translateX(0);
+    transform: translateY(3rem);
+  }
+
+  #fs-w {
+    padding-top: 5px;
+    width: 60px;
+    transform: translateX(0);
+  }
+
+  #k--score {
+    font-weight: bolder;
+    font-size: 20px;
+    transform: translateX(0);
+  }
+
+  .player--section {
+    border: none;
+    width: 500px;
+    max-height: 270px;
+  }
+
+  .player--div {
+    padding: 20px;
+    gap: 100px;
+  }
+
+  #player--score {
+    font-size: 20px;
+  }
+
+  #player--index {
+    width: 60px;
+  }
+
+  .aside {
+    width: 350px;
+  }
+
+  .aside h3 {
+    width: 68%;
+    padding: 24px;
+    font-size: 20px;
+  }
+
+  #play--now {
+    font-size: 20px;
+  }
+
+  form p {
+    font-size: 20px;
+  }
+
+  form input {
+    width: 80%;
+    padding: 8px;
+    margin: 0;
+    transform: translateX(2rem);
+  }
+
+  form input:placeholder-shown {
+    font-size: 20px;
+  }
+
+  form button {
+    margin: 0;
+    font-size: 20px;
+    padding: 5px;
+    transform: translateX(9.4rem);
+  }
+
+  #star {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+  }
+
+  .modal {
+    width: 500px;
+  }
+
+  #close {
+    transform: translateX(2rem);
+  }
+
+  footer {
+    position: fixed;
+    color: #fff;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+  }
 }
