@@ -4,9 +4,9 @@ The leader board is a small website system built to dispaly players score accord
 
  ## View web
 
-> || Desktop version ||
-> |-|---------|-|
-> || ![Screenshot1](/asset/desk.png) ||
+> || Desktop version || Mobile ||
+> |-|---------|-|----------|-|
+> || ![Screenshot1](/asset/desk.png) || ![Screenshot1](/asset/mobile.png) ||
 ## Built With
 
 - HTML
